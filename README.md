@@ -100,5 +100,5 @@ Now every time we call the `incrementCoffeeCount` method, we'll tell our widget 
 ### Resources 
 Below are the resources I used when creating this activity
 - [WWDC 23 - Bring Widgets to LIfe](https://developer.apple.com/videos/play/wwdc2023/10028)
-- HWS+ Creating a Simple Widget (can't be shared)
+- Paul Hudson, HWS+ Creating a Simple Widget (can't share link)
 - [Developer Documentation - Creating a Widget Extension](https://developer.apple.com/documentation/widgetkit/creating-a-widget-extension)
