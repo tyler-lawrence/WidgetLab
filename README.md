@@ -42,7 +42,7 @@ Xcode provides some sample code for us. We'll modify the code they shared to fit
 
 We'll get some errors sprinkled throughout the file. That's fine, it actually helps us identify the places we need to update our code so our new struct is properly called.
 
-2. Let's go to the `CoffeesConsumedWidgetView` and fix those errors.
+2. Let's go to the `CoffeesConsumedWidgetEntryView` and fix those errors.
   - This is where we design what the widget looks like. I'm going to keep it simple with a VStack and two Text views
 ```
 VStack {
@@ -67,7 +67,13 @@ func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) ->
     completion(timeline)
 }
 ```
-Great! We can now preview our widget. If you want to run the simulator make sure to update the scheme at the top of Xcode (to the left of where you select your simulator). Currently, it will always show our placeholder values. Next we'll take a look at how to get the actual information we care about, total coffees consumed!
+Great! We can now preview our widget. 
+
+> [!IMPORTANT]
+> - If you want to run the simulator make sure to change the scheme at the top of Xcode (to the left of where you select your simulator)
+> - Make sure *CoffeeCounter* is selected, not *CoffeeCounterWidgetExtension*
+> - If you're getting an error, make sure the minimum deployment is the same for both targets. 
+ Currently, it will always show our placeholder values. Next we'll take a look at how to get the actual information we care about, total coffees consumed!
 
 ## 4. Replace the sample data with real coffees consumed
 1.  We already have an object to track our data in `DataController`. Let's initialize a `DataController` in our Provider struct.
