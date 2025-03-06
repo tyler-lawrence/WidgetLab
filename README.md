@@ -1,6 +1,6 @@
 # WidgetLab
 
-In this Lab we will learn how to make a simple static Widget for an existing iOS app. The basic app, CoffeeCounter, tracks how many cups of coffee a user consumes. 
+In this Lab we will learn how to make a simple static Widget for an existing iOS app. The basic app, CoffeeCounter, tracks how many cups of coffee a user consumes. Our goal is to create a simple widget that displays the total coffees consumed. 
 
 https://github.com/user-attachments/assets/4d9a8d72-13aa-47c2-aecb-06bd72545d85
 
@@ -29,13 +29,14 @@ let defaults = UserDefaults(suiteName: "group.com.academy.CoffeeCounter")!
 ## 2. Create Widget Extension
 - File > New > Target ... select Widget Extension
 - Name it `CoffeesConsumedWidget`
-- make sure the option *Include Configuration App Intent* is unchecked
-- If you see a popup asking you to active the scheme, select Activate
+> [!IMPORTANT]
+> - make sure the option *Include Configuration App Intent* is unchecked
+> - If you see a popup asking you to active the scheme, select Activate
 
 ## 3. Modify the sample code
 Xcode provides some sample code for us. We'll modify the code they shared to fit our needs. Our goal is to have a simple static widget showing how many coffees have been consumed. The sample code is built around the idea of logging an emoji, which isn't too far from our purpose. 
 
-1. Modify the `SimpleEntry` struct so it will show an Int representing coffees consumed.
+1. In the CoffeeConsumedWidget file, Modify the `SimpleEntry` struct so it will show an Int representing coffees consumed.
   - Change `emoji: String` to `coffeesConsumed: Int`
   - We don't care about initializing a date so let's provide a default value. Change `date: Date` to `date: Date = Date.now`
 
@@ -49,7 +50,7 @@ VStack {
   Text(entry.coffeesConsumed.formatted())
 }
 ```
-3. Navigate to the Previews area and fix those errors. I'm going to put 2 and 4 as the values for coffeesConsumed
+3. Navigate to the Previews area and fix those errors. I'm going to put 2 and 4 as the values for coffeesConsumed.
 ```
 SimpleEntry(coffeesConsumed: 2)
 SimpleEntry(coffeesConsumed: 4)
@@ -95,7 +96,7 @@ In the App Groups section, you should see the group we created in step 1.2. Chec
 
 Great! Now our widget target and our app target are accessing the same app group. However, there's one more step to complete. Currently the widget isn't responding to changes when we interact with the app in ContentView. 
 
-5. Tell our widget to update
+5. Tell our widget to update.
  - Navigate to DataController file
  - import WidgetKit
  - add this line to the `incrementCoffeeCount` method
