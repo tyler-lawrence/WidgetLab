@@ -4,7 +4,9 @@ In this Lab we will learn how to make a simple static Widget for an existing iOS
 
 https://github.com/user-attachments/assets/4d9a8d72-13aa-47c2-aecb-06bd72545d85
 
-
+> [!IMPORTANT]
+> You'll need a develop account to follow along.
+> Make sure to change your development team in Xcode
 
 ## 1. Setup persistence across targets
 Before we get started with the widget we'll want to set up a couple things we'll need later.
