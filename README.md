@@ -105,6 +105,12 @@ WidgetCenter.shared.reloadAllTimelines()
 ```
 Now every time we call the `incrementCoffeeCount` method, we'll tell our widget that it should reload the timeline which will then get the correct information to display in the widget.
 
+## Next Steps
+- make another widget
+- customize the appearance
+- make another view in the app. specify where the widget takes you when you tap it
+- make an interactive widget (another lab coming soon)
+
 ### Resources 
 Below are the resources I used when creating this activity
 - [WWDC 23 - Bring Widgets to LIfe](https://developer.apple.com/videos/play/wwdc2023/10028)
