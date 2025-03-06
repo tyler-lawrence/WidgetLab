@@ -1,6 +1,6 @@
 # WidgetLab
 
-In this Lab we will learn how to make a Widget for an existing iOS app. The basic app, CoffeeCounter, tracks how many cups of coffee a user consumes. 
+In this Lab we will learn how to make a simple static Widget for an existing iOS app. The basic app, CoffeeCounter, tracks how many cups of coffee a user consumes. 
 
 https://github.com/user-attachments/assets/4d9a8d72-13aa-47c2-aecb-06bd72545d85
  
