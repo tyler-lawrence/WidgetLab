@@ -8,12 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var dataController = DataController()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Coffees Consumed")
+                .font(.largeTitle)
+            Text(dataController.coffeeCount.formatted())
+                .contentTransition(.numericText(value: Double(dataController.coffeeCount)))
+                .font(.title)
+            HStack {
+                Button("Drink 1 coffee") {
+                    withAnimation {
+                        dataController.incrementCoffeeCount(by: 1)
+                    }
+                }
+                Button("Drink 2 coffees") {
+                    withAnimation {
+                        dataController.incrementCoffeeCount(by: 2)
+                    }
+                }
+            }
+            .buttonStyle(.borderedProminent)
         }
         .padding()
     }
