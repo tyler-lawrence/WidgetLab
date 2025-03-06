@@ -90,7 +90,8 @@ Let's try running the simulator. If everything works we would expect our widget 
 
 4. Add a capability to our WidgetExtension target.
   - This is the same process as step one, but make sure you have the CoffeesConsumedWidgetExtension selected.
-![add-app-group-to-widget-target](https://github.com/user-attachments/assets/acfd3ff2-7859-4b86-81d3-a6b374528eb5)
+![add-app-group-widget](https://github.com/user-attachments/assets/b058ddb5-8b43-419e-b259-83f6861c922a)
+
 In the App Groups section, you should see the group we created in step 1.2. Check that box. 
 ![add-target](https://github.com/user-attachments/assets/c79a18c6-f2bc-4ac7-8e58-b14007bd31a8)
 
