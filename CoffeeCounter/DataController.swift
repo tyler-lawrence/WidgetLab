@@ -7,10 +7,12 @@
 
 import Foundation
 import SwiftUI
+import WidgetKit
 
 @Observable
 class DataController {
     // While force unwrapping generally isn't preferred, I don't mind it in this conxext because it's signaling to me as the developer that something is wrong with my data storage, which is an important feature of this app
+    #warning("1.3 - Add your app group name here")
     let defaults = UserDefaults(suiteName: "group.com.academy.CoffeeCounter")!
     var coffeeCount: Int {
         /*
@@ -33,5 +35,6 @@ class DataController {
 
     func incrementCoffeeCount(by amount: Int) {
         coffeeCount += amount
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }

@@ -6,19 +6,89 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5B59A21F2D79F37300989F73 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B59A21E2D79F37300989F73 /* WidgetKit.framework */; };
+		5B59A2212D79F37300989F73 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B59A2202D79F37300989F73 /* SwiftUI.framework */; };
+		5B59A22D2D79F37500989F73 /* CoffeesConsumedWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5B59A21C2D79F37300989F73 /* CoffeesConsumedWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B59A22B2D79F37500989F73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBB45932D775F350090F3AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B59A21B2D79F37300989F73;
+			remoteInfo = CoffeesConsumedWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B59A2322D79F37500989F73 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5B59A22D2D79F37500989F73 /* CoffeesConsumedWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5B59A21C2D79F37300989F73 /* CoffeesConsumedWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CoffeesConsumedWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B59A21E2D79F37300989F73 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
+		5B59A2202D79F37300989F73 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
 		5BBB459B2D775F350090F3AD /* CoffeeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5B59A22E2D79F37500989F73 /* Exceptions for "CoffeesConsumedWidget" folder in "CoffeesConsumedWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5B59A21B2D79F37300989F73 /* CoffeesConsumedWidgetExtension */;
+		};
+		5B59A2342D79FCA800989F73 /* Exceptions for "CoffeeCounter" folder in "CoffeesConsumedWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DataController.swift,
+			);
+			target = 5B59A21B2D79F37300989F73 /* CoffeesConsumedWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		5B59A2222D79F37300989F73 /* CoffeesConsumedWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5B59A22E2D79F37500989F73 /* Exceptions for "CoffeesConsumedWidget" folder in "CoffeesConsumedWidgetExtension" target */,
+			);
+			path = CoffeesConsumedWidget;
+			sourceTree = "<group>";
+		};
 		5BBB459D2D775F350090F3AD /* CoffeeCounter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5B59A2342D79FCA800989F73 /* Exceptions for "CoffeeCounter" folder in "CoffeesConsumedWidgetExtension" target */,
+			);
 			path = CoffeeCounter;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B59A2192D79F37300989F73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B59A2212D79F37300989F73 /* SwiftUI.framework in Frameworks */,
+				5B59A21F2D79F37300989F73 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BBB45982D775F350090F3AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +99,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B59A21D2D79F37300989F73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B59A21E2D79F37300989F73 /* WidgetKit.framework */,
+				5B59A2202D79F37300989F73 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5BBB45922D775F350090F3AD = {
 			isa = PBXGroup;
 			children = (
 				5BBB459D2D775F350090F3AD /* CoffeeCounter */,
+				5B59A2222D79F37300989F73 /* CoffeesConsumedWidget */,
+				5B59A21D2D79F37300989F73 /* Frameworks */,
 				5BBB459C2D775F350090F3AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				5BBB459B2D775F350090F3AD /* CoffeeCounter.app */,
+				5B59A21C2D79F37300989F73 /* CoffeesConsumedWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +130,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B59A21B2D79F37300989F73 /* CoffeesConsumedWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B59A22F2D79F37500989F73 /* Build configuration list for PBXNativeTarget "CoffeesConsumedWidgetExtension" */;
+			buildPhases = (
+				5B59A2182D79F37300989F73 /* Sources */,
+				5B59A2192D79F37300989F73 /* Frameworks */,
+				5B59A21A2D79F37300989F73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5B59A2222D79F37300989F73 /* CoffeesConsumedWidget */,
+			);
+			name = CoffeesConsumedWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = CoffeesConsumedWidgetExtension;
+			productReference = 5B59A21C2D79F37300989F73 /* CoffeesConsumedWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5BBB459A2D775F350090F3AD /* CoffeeCounter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BBB45AA2D775F370090F3AD /* Build configuration list for PBXNativeTarget "CoffeeCounter" */;
@@ -55,10 +159,12 @@
 				5BBB45972D775F350090F3AD /* Sources */,
 				5BBB45982D775F350090F3AD /* Frameworks */,
 				5BBB45992D775F350090F3AD /* Resources */,
+				5B59A2322D79F37500989F73 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5B59A22C2D79F37500989F73 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5BBB459D2D775F350090F3AD /* CoffeeCounter */,
@@ -80,6 +186,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					5B59A21B2D79F37300989F73 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					5BBB459A2D775F350090F3AD = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -100,11 +209,19 @@
 			projectRoot = "";
 			targets = (
 				5BBB459A2D775F350090F3AD /* CoffeeCounter */,
+				5B59A21B2D79F37300989F73 /* CoffeesConsumedWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B59A21A2D79F37300989F73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BBB45992D775F350090F3AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +232,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B59A2182D79F37300989F73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BBB45972D775F350090F3AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +248,93 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5B59A22C2D79F37500989F73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B59A21B2D79F37300989F73 /* CoffeesConsumedWidgetExtension */;
+			targetProxy = 5B59A22B2D79F37500989F73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5B59A2302D79F37500989F73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CoffeesConsumedWidget/CoffeesConsumedWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PF4YUG536;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeesConsumedWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CoffeesConsumedWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.coffeeCounter.CoffeeCounter.CoffeesConsumedWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5B59A2312D79F37500989F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CoffeesConsumedWidget/CoffeesConsumedWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PF4YUG536;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeesConsumedWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CoffeesConsumedWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.coffeeCounter.CoffeeCounter.CoffeesConsumedWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		5BBB45A82D775F370090F3AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,6 +530,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B59A22F2D79F37500989F73 /* Build configuration list for PBXNativeTarget "CoffeesConsumedWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B59A2302D79F37500989F73 /* Debug */,
+				5B59A2312D79F37500989F73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5BBB45962D775F350090F3AD /* Build configuration list for PBXProject "CoffeeCounter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
