@@ -3,12 +3,14 @@
 In this Lab we will learn how to make a simple static Widget for an existing iOS app. The basic app, CoffeeCounter, tracks how many cups of coffee a user consumes. 
 
 https://github.com/user-attachments/assets/4d9a8d72-13aa-47c2-aecb-06bd72545d85
- 
+
+
 
 ## 1. Setup persistence across targets
-Before we get started with the widget we'll want to set up 
+Before we get started with the widget we'll want to set up a couple things we'll need later.
 1. add capability: app group
-![add-app-group](https://github.com/user-attachments/assets/f5bfe82e-ebfb-4c6b-a65f-95c5b500ed5f)
+![add-app-group](https://github.com/user-attachments/assets/7e0243ed-a1f8-48b7-8079-c624414fe51a)
+
 
 2. Create the app group.
 Press the + button to create a new app group. A good convention to follow is start with *group* and then reverse domain matching your bundle. 
@@ -18,6 +20,9 @@ I'll name mine `group.com.academy.CoffeeCounter`
 ![create-group](https://github.com/user-attachments/assets/6d3bda76-f86c-4802-b00c-9b8b04df002e)
 
 3. add the app group to your DataController (warning 1.3 in Xcode)
+```
+let defaults = UserDefaults(suiteName: "group.com.academy.CoffeeCounter")!
+```
 
 ## 2. Create Widget Extension
 - File > New > Target ... select Widget Extension
