@@ -90,7 +90,7 @@ Check the box for `CoffeesConsumedWidgetExtension`. Now our widget target knows 
 
 3. Update all the calls to SimpleEntry.
    - now that we have a DataController we can access our coffeesConsumed property instead of hardcoding a value into the SimpleEntry
-   - replace all occurrences of SimpleEntry with `SimpleEntry(coffeesConsumed: dataController.coffeeCount)`
+   - replace all occurrences (except the preview) of SimpleEntry with `SimpleEntry(coffeesConsumed: dataController.coffeeCount)`
 
 Let's try running the simulator. If everything works we would expect our widget to show us the same number as our ContentView shows us. However, we're still seeing a 0 in our widget. This is where we'll bring in the work we started in step 1.
 
